@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  transition: background-image 1s ease;
+  color: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: rgba(0, 0, 0, 0.06);
+  transition: all 0.5s ease;
+}
+
+.search {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search input {
+  flex: 1;
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+}
+
+.search button {
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.main-weather {
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.main-weather h1 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.main-weather h2 {
+  font-size: 32px;
+}
+
+.hourly-forecast {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 20px 0;
+  width: 100%;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
+.hourly-card {
+  background: rgba(227, 222, 222, 0.8);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 90px;
+  backdrop-filter: blur(5px);
+  color: black;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hourly-card:hover {
+  transform: translateY(-5px);
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.details div {
+  text-align: center;
+  background: rgba(226, 217, 217, 0.8);
+  padding: 15px 20px;
+  border-radius: 10px;
+  min-width: 120px;
+  backdrop-filter: blur(5px);
+  color: #111010;
+  transition: all 0.4s ease;
+}
+
+.main-weather {
+  text-align: center;
+  padding: 0.2% ;
+  color: black; 
+}
+
+
+.details img {
+  width: 30px;
+  margin-bottom: 5px;
+}
+
+.details span {
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+}
+
+.details p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Background classes */
+.clear {
+  background-image: url('images/clear.png');
+}
+
+.rainy {
+  background-image: url('images/rain.png');
+}
+
+.thunder {
+  background-image: url('images/thunder.png');
+}
+
+.snow {
+  background-image: url('images/snow.png');
+}
+
+.clouds {
+  background-image: url('images/cloud.png');
+}
+
+.mist {
+  background-image: url('images/mist.png');
+}
+
+.default-bg {
+  background: linear-gradient(to bottom, #1ba7e8, #c7dee9);
+}
+
+.forecast-icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px 0;
+}
+
+
+body {
+  background-size: cover;
+  background-position: center;
+}
